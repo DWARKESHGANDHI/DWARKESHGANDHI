@@ -1,0 +1,370 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+    color: var(--gray-font);
+}
+:root{
+    --white-clr: #fff;
+    --gray-font: #484f5b;
+    --btn-color: #e6c8c3;
+    --light-gray-color: #efefef;
+    --second-bg-clr: #ecece7;
+    --hover-clr-social-icon: #8d807e;
+    --footer-clr: #434e5b;
+}
+section {
+    margin-top: 60px;
+}
+@font-face {
+    font-family: OpenSansBold;
+    src: url("../font/OpenSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: OpenSanslight;
+    src: url("../font/OpenSans-Light.ttf");
+}
+@font-face {
+    font-family: OpenSansExtraBold;
+    src: url("../font/OpenSans-ExtraBold.ttf");
+}
+nav{
+    font-family: OpenSansExtraBold;
+}
+p {
+    font-family: OpenSanslight;
+}
+button,
+h1,h2,h3,h4{
+    font-family: OpenSansBold;
+}
+.shadow{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.headerlogo{
+    height: 5rem; 
+}
+.headerlogo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.bg-header{
+    background-color: var(--white-clr);
+}
+.background{
+    background-image: url("../img/background/bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    margin-top: 6rem;
+}
+.btn_join_us{
+    background-color: var(--btn-color);
+    color: var(--gray-font);
+    border-radius: 0px;
+    text-transform: uppercase;
+}
+.btn_join_us:hover{
+    color: var(--white-clr);
+    transition: 0.5s;
+    background-color: var(--gray-font);
+}
+.pregnantWomen{
+    background-image: url("../img/background/bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+@media (min-width: 991px){
+    .pregnantWomen{
+        height: 50rem;
+    }
+}
+.pregnantWomen_main{
+    padding-top: 15rem;
+}
+@media (max-width: 767px) {
+    .pregnantWomen_main{
+        background-color: #ffffffb0;
+    }
+}
+.navbar-light .navbar-toggler{
+    color: rgba(0,0,0,.55);
+    background-color: var(--btn-color);
+}
+nav ul li a{
+    color: var(--gray-font);
+    text-decoration: none;
+}
+nav ul li:hover a{
+    color: var(--white-clr);
+    transition: 0.5s;
+    background-color: var(--gray-font);
+}
+nav ul li a{
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.programbox_body {
+    height: 8rem;
+    
+}
+
+.YogaBreath{
+    position: relative;
+    /* background-color: var(--btn-color); */
+}
+@media (min-width: 767px) {
+    .YogaBreath::before{
+        content: '';
+        background: url(../img/YogaBreath/YogaBreathicon1.png);
+        position: absolute;
+        background-repeat: no-repeat;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .YogaBreath::after{
+        content: '';
+        background: url(../img/YogaBreath/YogaBreathicon2.png);
+        position: absolute;
+        background-repeat: no-repeat;
+        top: 75%;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+}
+
+.Galery{
+    position: relative;
+    /* background-color: #ff000030; */
+}
+.Galery::before{
+    content: '';
+    background: url(../img/Galery/GSection1.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    left: 0;
+    bottom: 0;
+    height: 11rem;
+    width: 16rem;
+    z-index: -1;
+}
+.Galery::after{
+    content: '';
+    background: url(../img/Galery/GSection2.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0%;
+    right: 0;
+    height: 24rem;
+    width: 10rem;
+    z-index: -1;
+}
+@media (max-width:991px) {
+    .GaleryBox h6{
+        background-color: #e6c8c38f;
+        padding: 1rem;
+        border-radius: 0.7rem;
+    }
+}
+@media (max-width:786px) {
+    
+}
+
+@media (min-width:576px) {
+    .GaleryImgBody_backImg_two{
+        position: absolute;
+        bottom: 0;
+        left: -5rem;
+        z-index: -1;
+        width: 5rem;
+        height: 7rem;
+        
+    }
+    .GaleryImgBody_backImg_three{
+        position: absolute;
+        bottom: -7px;
+        right: -69px;
+        z-index: -1;
+        width: 12rem;
+        height: 10rem;
+    }
+}
+
+.shadow{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.GaleryImgBody{
+    position: relative;
+}
+.GaleryImg_Box img{
+    width: 100%;
+}
+.GaleryImgCnt_Box p{
+    height: 5rem;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.GaleryImgCnt_Box p::-webkit-scrollbar{
+    width: 10px;
+}
+.GaleryImgCnt{
+    background-color: var(--white-clr);
+}
+.GaleryImgBody_backImg_one {
+    position: absolute;
+    top: -8rem;
+    left: -1rem;
+    z-index: -1;
+    width: 10rem;
+    height: 7rem;
+}
+.YogaTrainingVideo{
+    background-color: var(--btn-color);
+}
+.YogaMainBodyBox{
+    /* height: 16.5rem; */
+    height: 100%;
+}
+.YogaTrainingVideo video{
+    height: 100%;
+    width: 100%;
+}
+.shadowTwo{
+    box-shadow: rgba(0, 0, 0, 100%) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.YogaVideoSocial_Box i {
+    font-size: 2rem;
+    
+}
+.YogaVideoSocial_Box i:hover{
+    color: var(--hover-clr-social-icon);
+    transition: 0.5s;
+}
+
+.GetInTouch{
+    position: relative;
+}
+.GetInTouch::before{
+    content: '';
+    background: url(../img/Get_in_Touch/GetInTouchSec_4.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0%;
+    right: 0;
+    height: 13rem;
+    width: 6rem;
+    z-index: -1;
+}
+.GetInTouch::after{
+    content: '';
+    background: url(../img/Get_in_Touch/GetInTouchSec_1.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 0%;
+    left: 0%;
+    height: 8rem;
+    width: 12rem;
+    z-index: -1;
+}
+.GetInTouchManiForm form textarea,
+.GetInTouchManiForm form input{
+    background-color: var(--light-gray-color);
+    border-radius: 0px;
+    color: var(--gray-font);
+}
+@media (max-width:991px) {
+    .GetInTouchManiForm_cnt p{
+        background-color: #e6c8c38f;
+        padding: 1rem;
+        border-radius: 0.7rem;
+    }
+}
+.GetInTouchManiForm{
+    position: relative;
+}
+.GetInTouchManiForm::before{
+    content: '';
+    background: url(../img/Get_in_Touch/GetInTouchSec_2.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 30%;
+    left: 0%;
+    height: 21rem;
+    width: 12rem;
+    z-index: -1;
+}
+.GetInTouchManiForm::after{
+    content: '';
+    background: url(../img/Get_in_Touch/GetInTouchSec_3.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    right: 0%;
+    bottom: 4%;
+    height: 15rem;
+    width: 13rem;
+    z-index: -1;
+}
+.footerMain{
+    background-color: var(--footer-clr);
+    color: var(--white-clr);
+}
+.footerMain ul li{
+    text-decoration: none;
+    list-style: none;
+}
+.footerMain a{
+    text-decoration: none;
+    color: var(--white-clr);
+}
+.FooterSocialBody i{
+    font-size: 1.5rem;
+}
+.FooterSocialBody i:hover{
+    color: var(--btn-color);
+    transition: 0.5s;
+
+}
+
+.jointNowOffer{
+    background-image: url(../img/JointNowOffer/JointNowBg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+@media (min-width: 991px) {
+    .jointNowOffer{
+        height: 50rem;
+    }
+}
+.JointNowBox h1{
+    position: relative;
+    
+}
+.JointNowBoxImg{
+    position: absolute;
+    background-repeat: no-repeat;
+    left: -13%;
+    height: 13rem;
+    width: 15rem;
+    
+}
+
+
+
+
+
+/* Loader Start */
+
+/* Loader End */
